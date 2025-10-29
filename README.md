@@ -17,10 +17,10 @@ When you create or edit a note, the plugin automatically adds/updates frontmatte
 
 ```yaml
 ---
-Author: Benjamin Kobjolke <b.kobjolke@xida.de>
+Author: John Doe <john.doe@example.com>
 Created at: '2025-10-21 13:03:31'
 Last updated at: '2025-10-21 14:25:42'
-Last edited by: Benjamin Kobjolke <b.kobjolke@xida.de>
+Last edited by: John Doe <john.doe@example.com>
 ---
 ```
 
@@ -95,10 +95,6 @@ npm run dev
 ```
 
 This starts compilation in watch mode - changes to `main.ts` are automatically compiled to `main.js`.
-
-## Author
-
-Benjamin Kobjolke
 
 ## License
 

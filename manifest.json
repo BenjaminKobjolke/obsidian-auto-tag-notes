@@ -4,7 +4,7 @@
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "Automatically adds and updates author, creation date, and last updated date in note frontmatter.",
-	"author": "Benjamin Kobjolke",
+	"author": "",
 	"authorUrl": "",
 	"isDesktopOnly": false
 }
