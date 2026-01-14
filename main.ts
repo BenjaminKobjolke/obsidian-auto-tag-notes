@@ -52,12 +52,24 @@ export default class AutoTagNotesPlugin extends Plugin {
 	}
 
 	async handleFileCreate(file: TFile) {
+		// Only process if this is the currently active file
+		const activeFile = this.app.workspace.getActiveFile();
+		if (!activeFile || activeFile.path !== file.path) {
+			return;
+		}
+
 		// Wait a bit to ensure file is fully created
 		await this.sleep(100);
 		await this.updateFrontmatter(file, true);
 	}
 
 	async handleFileModify(file: TFile) {
+		// Only process if this is the currently active file
+		const activeFile = this.app.workspace.getActiveFile();
+		if (!activeFile || activeFile.path !== file.path) {
+			return;
+		}
+
 		// Avoid infinite loops by checking if we're already processing this file
 		if (this.processingFiles.has(file.path)) {
 			return;
