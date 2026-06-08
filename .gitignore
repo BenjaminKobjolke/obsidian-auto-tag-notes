@@ -18,6 +18,10 @@ main.js
 # obsidian
 data.json
 
+# personal vault paths for deploy tool (keep vaults.example.json tracked)
+tools/vaults.json
+
 # Exclude macOS Finder (System Explorer) View States
 .DS_Store
 .claude
+claude-plans
